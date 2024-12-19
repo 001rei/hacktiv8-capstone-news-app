@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px !important;
+  transition: color 0.3s ease, font-weight 0.3s ease, border-bottom 0.3s ease !important;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  color: #c51010 !important;
+  border-bottom: 2px solid #000000;
+}
+
+.title {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: var(--color-text-secondary);
+}
+
+.footer-title {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.bookmark-icon-inner {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.bookmark-icon:hover .bookmark-icon-inner {
+  transform: scale(1.2);
+}
+
+.no-link-style {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.no-link-style:hover {
+  transform: scale(1.1);
+}
+
+.card-theme {
+  color: #a12626;
+}
