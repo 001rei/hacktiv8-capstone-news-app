@@ -9,11 +9,9 @@ export default function Indonesia() {
   const { articles, loading, error } = useSelector((state) => state.news);
 
   useEffect(() => {
-    console.log(articles);
-    if (articles.length === 0 ) {
-      dispatch(fetchArticles({ query: "indonesia" }));
-    }
-  }, [dispatch, articles.length, articles]);
+    // console.log(articles);
+    dispatch(fetchArticles({ query: "indonesia" }));
+  }, [dispatch]);
 
   return (
     <>

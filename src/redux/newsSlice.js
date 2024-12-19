@@ -37,9 +37,11 @@
       builder
         .addCase(fetchArticles.pending, (state) => {
           state.loading = true;
+          state.error = null;
         })
         .addCase(fetchArticles.fulfilled, (state, action) => {
           state.loading = false;
+          state.error = null;
           state.articles = action.payload;
         })
         .addCase(fetchArticles.rejected, (state, action) => {
@@ -50,4 +52,4 @@
   });
 
   export default newsSlice.reducer;
-  export const { saveArticle, unsaveArticle, resetState } = newsSlice.actions;
+  export const { saveArticle, unsaveArticle } = newsSlice.actions;
